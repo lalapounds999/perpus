@@ -1,0 +1,747 @@
+/* ===== RESET DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #FFD1B0, #ffffff);
+    color: #444;
+    line-height: 1.7;
+    padding-bottom: 40px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: linear-gradient(to right, #FF829A, #ff9fb0);
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}
+
+/* ===== CONTAINER UTAMA ===== */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== JUDUL UTAMA ===== */
+h1 {
+    text-align: center;
+    color: #FF829A;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #FF829A;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* ===== PARAGRAF ===== */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ===== LIST MISI ===== */
+ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== SECTION MOTIVASI ===== */
+.motivasi {
+    margin-top: 40px;
+    padding: 25px;
+    background: linear-gradient(135deg, #FFD1B0, #ffe4d8);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.motivasi h2 {
+    margin-bottom: 15px;
+}
+
+.motivasi p {
+    font-style: italic;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* ===== IKON EMOJI DI JUDUL ===== */
+.judul-icon {
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+/* ===== RESPONSIVE BIAR RAPI DI HP ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* ===== NAVBAR UTAMA ===== */
+.navbar {
+    background: linear-gradient(to right, #FF829A, #ff9fb0);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover efek manis */
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Link aktif (halaman yang sedang dibuka) */
+.menu li a.active {
+    background-color: white;
+    color: #FF829A;
+}
+
+/* ===== RESPONSIVE HP ===== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* ===== AREA DAFTAR BUKU ===== */
+.container-buku {
+    width: 95%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* ===== TABEL RAPI ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Biar kolom tidak berantakan */
+}
+
+/* HEADER */
+th {
+    text-align: left;
+    padding: 12px 10px;
+    background: #ffe4ec;
+    color: #d14d72;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ISI */
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f1f1f1;
+    vertical-align: top;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+/* WARNA BARIS SELANG SELING */
+tr:nth-child(even) {
+    background: #fff7f9;
+}
+
+/* HOVER */
+tr:hover {
+    background: #ffeef3;
+    transition: 0.2s;
+}
+
+/* ===== ATUR LEBAR KOLOM ===== */
+th:nth-child(1), td:nth-child(1) { width: 18%; } /* Judul */
+th:nth-child(2), td:nth-child(2) { width: 32%; } /* Sinopsis */
+th:nth-child(3), td:nth-child(3) { width: 18%; } /* Penulis */
+th:nth-child(4), td:nth-child(4) { width: 12%; text-align:center; } /* Tahun */
+th:nth-child(5), td:nth-child(5) { width: 20%; } /* Aksi */
+
+/* SINOPSIS DIPOTONG BIAR RAPI */
+.sinopsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Maks 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* LINK SELENGKAPNYA */
+.selanjutnya {
+    color: #FF829A;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* TOMBOL AKSI */
+.aksi a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.aksi .edit {
+    background: #FFD1B0;
+    color: #a6533f;
+}
+
+.aksi .hapus {
+    background: #FF829A;
+    color: white;
+}
+
+.aksi a:hover {
+    opacity: 0.85;
+}
+
+/* ===== TOMBOL UMUM ===== */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* ===== TOMBOL EDIT ===== */
+.btn-edit {
+    background: linear-gradient(135deg, #FFD1B0, #ffbfa0);
+    color: #8a4b2a;
+}
+
+.btn-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* ===== TOMBOL HAPUS ===== */
+.btn-hapus {
+    background: linear-gradient(135deg, #FF829A, #ff5f7a);
+    color: white;
+}
+
+.btn-hapus:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* ===== TOMBOL TAMBAH ===== */
+.btn-tambah {
+    background: linear-gradient(135deg, #FF829A, #ffa3b5);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn-tambah:hover {
+    transform: scale(1.05);
+}
+
+/* ===== TOMBOL KEMBALI ===== */
+.btn-kembali {
+    background: #f1f1f1;
+    color: #555;
+}
+
+.btn-kembali:hover {
+    background: #FFD1B0;
+    color: #8a4b2a;
+}
+
+/* JARAK ANTAR TOMBOL DI KOLOM AKSI */
+.aksi .btn {
+    margin: 3px 5px 3px 0;
+}
+
+/* ===== CONTAINER FORM ===== */
+.form-container {
+    width: 95%;
+    max-width: 850px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 35px 40px;
+}
+
+/* ===== CONTAINER EDIT FORM ===== */
+.edit-container {
+    width: 95%;
+    max-width: 850px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* JUDUL */
+.edit-container h2 {
+    color: #FF829A;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* FORM GROUP */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+/* LABEL */
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* INPUT & TEXTAREA */
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ffd6de;
+    font-size: 14px;
+    background: #fff8fa;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #FF829A;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255,130,154,0.15);
+}
+
+/* TEXTAREA */
+.form-group textarea {
+    min-height: 110px;
+    resize: none;
+}
+
+/* ===== TOMBOL SIMPAN ===== */
+.btn-simpan {
+    margin-top: 10px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #FF829A, #ff9fb0);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.25s ease;
+}
+
+.btn-simpan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ===== TOMBOL BATAL ===== */
+.btn-batal {
+    margin-left: 10px;
+    padding: 9px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    background: #f1f1f1;
+    color: #666;
+    transition: 0.2s;
+}
+
+.btn-batal:hover {
+    background: #FFD1B0;
+    color: #8a4b2a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .edit-container {
+        padding: 25px;
+    }
+}
+
+/* ===== BACKGROUND HALAMAN ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe3ec, #fff6f0);
+}
+
+/* ===== BOX KONTAK ===== */
+.kontak-box {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* JUDUL */
+.kontak-box h2 {
+    color: #ff7a9c;
+    margin-bottom: 10px;
+}
+
+/* DESKRIPSI */
+.kontak-box p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* ===== FORM GRID ===== */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ffd6de;
+    background: #fff8fa;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.form-row textarea {
+    min-height: 110px;
+    resize: none;
+}
+
+/* FOCUS EFFECT */
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: #ff7a9c;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255,122,156,0.15);
+}
+
+/* ===== TOMBOL ===== */
+.btn-kirim {
+    background: linear-gradient(135deg, #ff7a9c, #ff9fb5);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-kirim:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.btn-kembali {
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 25px;
+    background: #f1f1f1;
+    color: #555;
+    font-weight: 600;
+}
+
+.btn-kembali:hover {
+    background: #ffd1b0;
+    color: #8a4b2a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .kontak-box }
+
+    input[name="tahun_terbit"] {
+    width: 120px;
+}
+
+
+/* ===== BACKGROUND HALAMAN ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ffe6eb, #fff5f7);
+}
+
+/* ===== BOX KONTAK ===== */
+.kontak-box {
+    max-width: 600px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(255, 105, 135, 0.15);
+    text-align: center;
+}
+
+.kontak-box h2 {
+    color: #ff6f91;
+    margin-bottom: 10px;
+}
+
+.kontak-box p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ===== FORM ===== */
+.form-row {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ffc2cf;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #fff0f3;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff8fab;
+    box-shadow: 0 0 6px rgba(255, 143, 171, 0.4);
+}
+
+/* ===== TOMBOL ===== */
+.btn-kirim {
+    background: linear-gradient(135deg, #ff8fab, #ff6f91);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-kirim:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 111, 145, 0.3);
+}
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #ff6f91;
+    font-weight: bold;
+}
+
+/* ===== HALAMAN SUKSES ===== */
+.sukses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sukses-box {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 105, 135, 0.2);
+    max-width: 420px;
+    border-top: 6px solid #ff6f91;
+}
+
+.sukses-box h2 {
+    color: #ff6f91;
+    margin-bottom: 15px;
+}
+
+.sukses-box p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+body {
+    background: linear-gradient(135deg, #f8cdda, #fbd3e9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CARD FORM */
+.form-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* JUDUL */
+.form-container h2 {
+    text-align: center;
+    color: #e15b86;
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* INPUT & TEXTAREA */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* BUTTON SIMPAN */
+.btn-simpan {
+    margin-top: 20px;
+    background: #e15b86;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-simpan:hover {
+    background: #c94470;
+}
+
+/* BUTTON KEMBALI */
+.btn-kembali {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #e15b86;
+    font-weight: bold;
+}
